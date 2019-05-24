@@ -1,5 +1,5 @@
 <h1><%= @owner.name %> Vending Machines</h1>
 
 <% @owner.machines.each do |machine| %>
-  <p><%= link_to machine.location, machine_path(machine)%></p>
+  <p><%= link_to machine.location, machine_path(@owner, machine)%></p>
 <% end %>
